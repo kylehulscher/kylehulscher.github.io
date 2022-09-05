@@ -1,0 +1,130 @@
+html {
+  height: 100%;
+}
+
+body {
+	background: #fff;
+	/*background: -webkit-linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,1.0)); 
+    background: -o-linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,1.0)); 
+    background: -moz-linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,1.0)); 
+    background: linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,1.0)); */ 
+	font-family: 'Sansita', sans-serif;
+	margin: 0;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-height: 100%;
+  	display: flex;
+ 	flex-direction: column;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+ul {
+	font-size: 20px;
+	width: 80%;
+}
+
+p {
+	margin-bottom: 35px;
+	margin-left: 35px;
+	margin-right: 35px;
+	font-size: 15pt;
+}
+
+a {
+	text-decoration:none;
+	font-size:20px;
+	/*color: #1ab2ff;*/
+    color: #c66;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+.topbar {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 50px;
+	//box-shadow: 2px 3px 3px #333;
+	position: fixed;
+	background: #f00;
+	z-index: 500;
+	border: none;
+}
+
+.golog {
+	display: block;
+	margin: auto;
+	margin-top: 3px;
+	height: 35px;
+	width: 35px;
+	clear: none;
+}
+
+#header{
+   background: url("images/gobanhires2.jpg") repeat top center fixed;
+   background-size: auto;
+   height:266px;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   color: #302e2e;
+   text-align: center;
+}
+
+#content {
+	margin: auto;
+	width: 70%;
+	margin-bottom: 30px;
+	//text-align: center;
+	color: #ddd;
+	background: #302e2e;
+/*
+	background: -webkit-linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,1.0)); 
+    background: -o-linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,1.0)); 
+    background: -moz-linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,1.0)); 
+    background: linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,1.0));  
+*/
+}
+
+#p1, #p2 {
+	text-indent: 4em;
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.btnhref:hover {
+	text-decoration: none;
+}
+
+.footer {
+	background: #383434;
+	color: #fff;
+	text-align: center;
+	box-shadow:inset 0 20px 5px -16px #222;
+}
+
+/*about*/
+#bmap {
+	display: block;
+	margin: auto;
+}
+
+#image-text {
+	width: 50%;
+	margin: 5px;
+	display: inline-block;
+}
+
+#explabel {
+	vertical-align: top;
+}
