@@ -2,10 +2,10 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 30;
+    z-index: 10;
     top: 0;
     left: 0;
-    background-color: #00f;
+    background-color: #222237;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -15,13 +15,13 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #f9f9f9;
     display: block;
     transition: 0.3s
 }
 
 .sidenav a:hover, .offcanvas a:focus{
-    color: #ddd;
+    color: #b0b0ff;
 }
 
 .sidenav .closebtn {
@@ -50,13 +50,13 @@
     transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
    -webkit-transition: opacity .25s ease-in-out;
-    z-index: 20;
+    z-index: 8;
     height: 100%;
     width: 100%;
     overflow:hidden;
     background-repeat:no-repeat;
     background-position:center;
-    position:absolute;
+    position:fixed;
     top: 0px;
     left: 0px;
 }

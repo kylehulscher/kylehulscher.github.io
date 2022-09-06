@@ -1,53 +1,57 @@
 <!DOCTYPE html>
+<html>
 <head>
 	<!--
-	Kyle Hulscher
-	1/25/2017
+		Kyle Hulscher
+		1/25/2017
 	-->
 	<meta name = "description" content = "A Portfolio for Kyle Hulscher" />
 	<meta name = "keywords" content = "portfolio, computer science, projects, kyle, hulscher, github, iowa, uiowa, university of iowa, cs, coding, java, python, css, html, javascript, sql, php, c#, winforms, dotnet, university, software, software dev, developer" />
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="main.css" >
 	<link rel="stylesheet" type="text/css" href="sidebar.css" >
-	<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="index.html">Home</a>
 		<a href="about.html">About</a>
-		<a href="projShowcase.html">Project Showcase</a>
+		<a href="portfolio.html">Portfolio</a>
 	</div>
 
 	<div id="main" class="topbar">
-		<a href="#" class="btnhref"><span style="font-size:30px;cursor:pointer;color:#fff;padding-left:5px;" onclick="openNav()">&#9776;</span></a>
+		<a href="#" class="btnhref">
+			<span class="hamburger" onclick="openNav()">&#9776;</span>
+		</a>
 		<img style="margin-top:-36px" class="golog" src="images/golog.png" alt="logo" title="logo">
 	</div>
 
 	<script>
 		function openNav() {
 			document.getElementById("mySidenav").style.width = "250px";
-			document.getElementById("main").style.marginLeft = "250px";
 			document.getElementById("darkLayer").style.display = "";
 		}
 
 		function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
-			document.getElementById("main").style.marginLeft= "0";
 			document.getElementById("darkLayer").style.display = "none";
 		}
 	</script>
-
-	<header id="header">
-		<!-- for header image -->
-	</header>
-	
-	<div id="content">
-		<h1>Project Showcase</h1>
+	<div id="main-body">
+		<div id="content">
+			<h1> Portfolio </h1>
+		</div>
 	</div>
 
 	<footer class="footer">
-		<p>Kyle Hulscher Portfolio</p>
+		<p>Kyle Hulscher</p>
+		<div class="row">
+			<a href="https://github.com/kylehulscher" target="_blank" rel="noopener noreferrer"><img class="footer_image" src="images/Github_Logo.png" alt="github logo"></a>
+			<a href="https://www.linkedin.com/in/kyle-hulscher/" target="_blank" rel="noopener noreferrer"><img class="footer_image" src="images/LinkedIn_logo.png" alt="LinkedIn Logo"></a>
+		</div>
 	</footer>
 	<div id="darkLayer" class="darkClass" style="display:none;height:100%;"></div>	
 </body>
+</html>
