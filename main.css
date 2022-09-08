@@ -66,6 +66,7 @@ a:hover {
 	height: 40px;
 	width: 139px;
 	clear: none;
+	pointer-events: none;
 }
 
 #main-body {
@@ -129,4 +130,9 @@ img.footer_image {
 	display: inline;
 	padding-left: 5px;
 	padding-right: 5px;
+}
+
+.menu_2nd_lvl, #tbt_2nd_lvl {
+	font-size: 18px;
+	margin-left: 5px;
 }
