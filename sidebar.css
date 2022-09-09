@@ -60,3 +60,8 @@
     top: 0px;
     left: 0px;
 }
+
+.menu_2nd_lvl, #tbt_2nd_lvl {
+    font-size: 18px;
+    margin-left: 5px;
+}

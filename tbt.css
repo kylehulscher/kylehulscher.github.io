@@ -1,0 +1,30 @@
+#content_header1 {
+	float: left;
+	text-align: left;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+  30% {
+  	opacity: 1;
+  }
+  70% {
+  	opacity: 1;
+  }
+  100% {
+  	opacity: 0;
+  }
+}
+
+.row h1::after {
+	content: "_";
+	width: 5px;
+	height: 20px;
+	color: #ffdd00;
+	display: inline;
+	animation: cursor-blink 1.2s steps(100) infinite;
+}
