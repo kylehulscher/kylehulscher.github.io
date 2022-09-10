@@ -1,8 +1,17 @@
 #content_header1 {
 	float: left;
 	text-align: left;
+	word-wrap: normal;
+	word-break: normal;
+	max-width: 100%;
+}
+
+#content_header2 {
+	margin-top: 20px;
+	text-align: left;
 	word-wrap: break-word;
-	word-break: break-all;
+	word-break: normal;
+	white-space: pre-line;
 }
 
 @keyframes cursor-blink {
@@ -20,11 +29,15 @@
   }
 }
 
-.row h1::after {
+.row #content_header2::after {
 	content: "_";
 	width: 5px;
 	height: 20px;
 	color: #ffdd00;
 	display: inline;
 	animation: cursor-blink 1.2s steps(100) infinite;
+}
+
+.wrongChar {
+	color: #f00;
 }
