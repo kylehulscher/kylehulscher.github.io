@@ -25,7 +25,7 @@ function headingComparator() {
 		if (header2html[i] != header1html[i]) {
 			console.log("no");
 			document.getElementById('content_header2').innerHTML = header2html.substring(0, i) + '<span class="wrongChar">' + header2html[i] + '</span>' + header2html.substring(i + 1, header2html.length);
-			break;
+			
 		}
 	}
 }
