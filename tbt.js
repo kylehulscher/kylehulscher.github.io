@@ -1,14 +1,16 @@
 // trial by typing js1
 
-const myRequest = new Request('https://raw.githubusercontent.com/kylehulscher/kylehulscher.github.io/main/word_list.json');
+const myRequest = new Request('https://raw.githubusercontent.com/kylehulscher/kylehulscher.github.io/main/word_list_formatted.json');
 var myList = [];
 
 function loadWordList() {
 	fetch(myRequest)
 	  .then((response) => response.json())
 	  .then((data) => {
+	  	console.log(data);
 	    for(var i = 0; i < data.length; i++) {
-	    	myList.push(data[i].of);
+	    	console.log("data.length: " + data.length);
+	    	myList.push(data[i]);
 	    }}).then(function() {
 			for (var i = 0; i < 40; i++) {
 				var ind = Math.floor(Math.random() * myList.length);
