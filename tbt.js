@@ -16,7 +16,13 @@ function loadWordList() {
 			}})
 		}
 
-loadWordList();
+window.addEventListener('load', function () {
+	loadWordList();
+	for (var i = 0; i < 40; i++) {
+		var ind = Math.floor(Math.random() * myList.length);
+		document.getElementById('content_header1').innerHTML += myList[ind] + " ";
+	}
+})
 
 function headingComparator() {
 	var header1html = document.getElementById('content_header1').innerHTML + "";
