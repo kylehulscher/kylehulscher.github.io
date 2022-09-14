@@ -48,10 +48,18 @@
 		</div>
 		<div class="row" id="content">
 			<h1 id="content_header1"></h1>
-			<!--
-			<hr>
-			<h1 id="content_header2"></h1>
-			-->
+		</div>
+		<div class="controls">
+			<!--<button onclick="setTimeout(myFunction, 1000);">Try it</button>-->
+			<button id="reloadButton" class="tbtButton" onclick="reloadText();">Reload</button>
+			<button id="resetButton" class="tbtButton" onclick="resetText();">Reset</button>
+			<input id="difficultySlider" class="slider" type="range" min="0" max="6" step="1">
+			<label class="sliderLabel" for="difficultySlider">Difficulty</label>
+		</div>
+		<div class="controls">
+			<!--<button onclick="setTimeout(myFunction, 1000);">Try it</button>-->
+			<input id="lengthSlider" class="slider" type="range" min="5" max="50" step="1">
+			<label class="sliderLabel" for="difficultySlider">Length</label>
 		</div>
 	</div>
 

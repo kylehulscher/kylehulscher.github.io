@@ -4,6 +4,7 @@
 	word-wrap: normal;
 	word-break: normal;
 	width: 100%;
+	height: auto;
 }
 
 .titleDiv {
@@ -12,7 +13,7 @@
 }
 
 .appTitle {
-	color: #8888FF;
+	color: #CCC9DC;
 	text-align: left;
 }
 
@@ -21,7 +22,7 @@
     background: #88888822;
   }
   50% {
-  	background: #888888FF;
+  	background: #888888CC;
   }
   100% {
   	background: #88888822;
@@ -31,7 +32,7 @@
 .nextChar {
 	background: #888888FF;
 	border-radius: 5px;
-	animation: cursor-blink 1.3s steps(100) infinite;
+	animation: cursor-blink 1.0s steps(100) infinite;
 }
 
 .incorrectRun {
@@ -42,13 +43,54 @@
 	color: #22dd66;
 }
 
-/*
-#lastSpan::after {
-	content: "_";
-	width: 5px;
-	height: 20px;
-	color: #ffdd00;
-	display: inline;
-	animation: cursor-blink 1.2s steps(100) infinite;
+.controls {
+	width: 70%;
+	margin: auto;
+	text-align: left;
 }
-*/
+
+.tbtButton {
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 8px 15px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+  float: right;
+  display: inline-grid;
+  margin-left: 10px;
+}
+
+#reloadButton {
+	background-color: #20AF35;
+}
+
+#reloadButton:hover {
+	background-color: #208F35;
+	transition: 0.5s;
+}
+
+#resetButton {
+	background-color: #AF3535;
+}
+
+#resetButton:hover {
+	background-color: #8F3535;
+	transition: 0.5s;
+}
+
+.slider {
+	float: left;
+	display: inline-grid;
+	margin-left: 10px;
+}
+
+.sliderLabel {
+	color: #FFF;
+	float: left;
+	display: inline-grid;
+	margin-left: 10px;
+}

@@ -5,7 +5,7 @@
     z-index: 10;
     top: 0;
     left: 0;
-    background-color: #222237;
+    background-color: #1B2A41;
     overflow-x: hidden;
     white-space: nowrap;
     transition: 0.5s;
@@ -16,13 +16,51 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #f9f9f9;
+    color: #BBB8CB;
     display: block;
     transition: 0.3s
 }
 
 .sidenav a:hover, .offcanvas a:focus{
-    color: #b0b0ff;
+    color: #EEEEFF;
+    animation: embolden 0.2s steps(10);
+    font-weight: 1000;
+}
+
+@keyframes embolden {
+  0% {
+    font-weight: 100;
+  }
+  10% {
+    font-weight: 200;
+  }
+  20% {
+    font-weight: 300;
+  }
+  30% {
+    font-weight: 400;
+  }
+  40% {
+    font-weight: 500;
+  }
+  50% {
+    font-weight: 600;
+  }
+  60% {
+    font-weight: 700;
+  }
+  70% {
+    font-weight: 800;
+  }
+  80% {
+    font-weight: 900;
+  }
+  90% {
+    font-weight: 1000;
+  }
+  100% {
+    font-weight: 1000;
+  }
 }
 
 .sidenav .closebtn {

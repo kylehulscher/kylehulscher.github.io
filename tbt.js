@@ -5,6 +5,7 @@ var myList = [];
 var fullData = [];
 
 var difficulty = 6;
+var wordsLength = 10;
 var corrInd = [];
 var incInd = [];
 var typedText = "";
@@ -19,7 +20,7 @@ function loadWordList() {
 	    	myList.push(entry[0]['word']);
 	    }}).then(function() {
 	    	console.log(myList);
-			for (var i = 0; i < 40; i++) {
+			for (var i = 0; i < wordsLength; i++) {
 				var ind = Math.floor(Math.random() * (myList.length - (difficulty * 1000)));
 				document.getElementById('content_header1').innerHTML += myList[ind] + " ";
 			}})
@@ -127,3 +128,22 @@ document.addEventListener('keydown', function(event) {
 	headingComparator();
 	console.log(typedText);
 });
+
+function reloadText() {
+	myList = [];
+	fullData = [];
+	wordsLength = document.getElementById('lengthSlider').value;
+	difficulty = 6 - document.getElementById('difficultySlider').value;
+	corrInd = [];
+	incInd = [];
+	typedText = "";
+	document.getElementById('content_header1').innerText = "";
+	loadWordList();
+}
+
+function resetText() {
+	corrInd = [];
+	incInd = [];
+	typedText = "";
+	headingComparator();
+}
