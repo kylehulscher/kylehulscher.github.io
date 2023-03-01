@@ -100,7 +100,7 @@
     left: 0px;
 }
 
-.menu_2nd_lvl, #tbt_2nd_lvl {
+a.menu_2nd_lvl {
     font-size: 18px;
     margin-left: 5px;
 }
